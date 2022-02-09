@@ -1,6 +1,6 @@
 {
   "name": "hydrooj-pastebin-plus",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Hydro pastebin module",
   "main": "index.js",
   "author": "liyanqwq",
