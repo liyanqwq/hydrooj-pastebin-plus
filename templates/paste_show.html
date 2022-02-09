@@ -44,7 +44,7 @@
               }
           </script>
           
-          <div class="code-toolbar" id="view-source" style="display:none;"><pre class="syntax-hl language-markdown" tabindex="0"><code class="language-markdown" style="font-size:0.8em!important;">{{doc.content|safe}}</code></pre></div>
+          <div class="code-toolbar" id="view-source" style="display:none;"><pre class="syntax-hl language-markdown" tabindex="0"><code class="language-markdown" style="font-size:0.8em!important;">{{ doc.content | escape | safe }}</code></pre></div>
           
           <br>
           <div class="row" style="margin-left: 5px; text-align: left;">
