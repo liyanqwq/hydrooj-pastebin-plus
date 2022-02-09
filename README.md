@@ -5,13 +5,17 @@
 ## 使用说明
 
 1. 进入您的 HydroOJ 安装目录
-2. 执行如下命令
+2. 在 `/packages/ui-default/templates/layout/html5.html` 中 `<head>` 标签结束前位置插入如下代码
+   ```html
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+   ```
+3. 执行如下命令
    ```bash
    yarn add hydrooj-pastebin-plus
    hydrooj addon add hydrooj-pastebin-plus
    ```
-3. 重启您的 HydroOJ
-4. 在首页菜单加入超链接至 `/paste/create`
+4. 重启您的 HydroOJ
+5. 在首页菜单加入超链接至 `/paste/create`
 
 ## 版权
 

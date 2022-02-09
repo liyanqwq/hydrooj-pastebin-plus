@@ -33,6 +33,19 @@
               {{ doc.content|markdown|safe }}
             </label>
           </div>
+          
+          <div style="margin:2rem 0 1.2rem;">
+              <h3>剪贴板的原始内容 <button onclick="toggleInfoView()" style="color:inherit;font-size:0.96rem!important;" id="view-info">查看</button></h3>
+          </div>
+          <script>
+              function toggleInfoView(){
+                  var jq = jQuery.noConflict();
+                  jq("#view-source").slideToggle();
+              }
+          </script>
+          
+          <div class="code-toolbar" id="view-source" style="display:none;"><pre class="syntax-hl language-markdown" tabindex="0"><code class="language-markdown" style="font-size:0.8em!important;">{{doc.content|safe}}</code></pre></div>
+          
           <br>
           <div class="row" style="margin-left: 5px; text-align: left;">
             <input type="hidden" name="csrfToken" value="{{ handler.csrfToken }}">
