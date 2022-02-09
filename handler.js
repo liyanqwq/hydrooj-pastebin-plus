@@ -67,8 +67,8 @@ class PasteDeleteHandler extends Handler {
     async post({
         pasteid ,
     }) {
-        // 将用户重定向到创建完成的url
-        this.response.redirect = this.url('homepage');
+        await pastebin.del(pasteid);
+        this.response.redirect = this.url('paste_manage');
     }
 }
 
