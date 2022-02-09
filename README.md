@@ -8,7 +8,7 @@
 2. 执行如下命令
    ```bash
    yarn add hydrooj-pastebin-plus
-   hydrooj addons add hydrooj-pastebin-plus
+   hydrooj addon add hydrooj-pastebin-plus
    ```
 3. 重启您的 HydroOJ
 4. 在首页菜单加入超链接至 `/paste/create`
