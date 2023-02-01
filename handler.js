@@ -1,7 +1,6 @@
 const { Route, Handler } = global.Hydro.service.server; // 注册路由所用工具
 const { PRIV } = global.Hydro.model.builtin; // 内置 Privilege 权限节点
 const pastebin = global.Hydro.model.pastebin; // 刚刚编写的pastebin模型
-const { checkContent } = global.Hydro.lib.validator; // 用于检查用户输入是否合法
 const { NotFoundError } = global.Hydro.error;
 const { PermissionError } = global.Hydro.error;
 
