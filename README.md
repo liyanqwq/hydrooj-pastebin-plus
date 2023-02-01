@@ -2,6 +2,8 @@
 
 由 `hydro_pastebin` 二次开发。
 
+现已适配 Hydro 最新版本。
+
 ## 使用说明
 
 1. 进入您的 HydroOJ 安装目录
