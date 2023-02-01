@@ -13,7 +13,7 @@
    ```
 3. 执行如下命令
    ```bash
-   yarn add hydrooj-pastebin-plus
+   yarn global add hydrooj-pastebin-plus
    hydrooj addon add hydrooj-pastebin-plus
    ```
 4. 重启您的 HydroOJ
