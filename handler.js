@@ -3,6 +3,7 @@ const { PRIV } = global.Hydro.model.builtin; // 内置 Privilege 权限节点
 const pastebin = global.Hydro.model.pastebin; // 刚刚编写的pastebin模型
 const { NotFoundError } = global.Hydro.error;
 const { PermissionError } = global.Hydro.error;
+const { ValidationError } = global.Hydro.error;
 
 class PasteCreateHandler extends Handler {
     async get() {
@@ -14,6 +15,8 @@ class PasteCreateHandler extends Handler {
         content , 
         isprivate,
     }) {
+        if(title.trim().length<2)throw new ValidationError('title', "title is too short.");
+        if(content.trim().length<3)throw new ValidationError('content', "content is too short.");
         var p;
         if(isprivate==="on"){
             p=true;
@@ -42,6 +45,8 @@ class PasteEditHandler extends Handler {
         content , 
         isprivate ,
     }) {
+        if(title.trim().length<2)throw new ValidationError('title', "title is too short.");
+        if(content.trim().length<3)throw new ValidationError('content', "content is too short.");
         var p;
         if(isprivate==="on"){
             p=true;

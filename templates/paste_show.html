@@ -18,6 +18,9 @@
               <font color="gray" size="2px">
                 {{ doc.time }}&emsp;<span class="icon icon-user"></span> {{ doc.user }}
               </font>
+              {% if doc.isprivate == true %}
+                <span style="color: red;">(私有)</span>
+              {% endif %}
             </div>
           </div>
           <!--

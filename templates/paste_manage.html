@@ -18,7 +18,11 @@
                 <tbody>
                     {%- for pdoc in doc -%}
                     <tr>
-                        <td><a href="/paste/show/{{pdoc._id}}" style="color:inherit">{{pdoc.title}}</a></td>
+                        {% if pdoc.isprivate == true %}
+                            <td><a href="/paste/show/{{pdoc._id}}" style="color:inherit">{{pdoc.title}}<span style="color: red;"> (私有)</span></a></td>
+                        {% else %}
+                            <td><a href="/paste/show/{{pdoc._id}}" style="color:inherit">{{pdoc.title}}</a></td>
+                        {% endif %}
                         <td>{{pdoc.time}}</td>
                         <td>
                             <a href="/paste/show/{{pdoc._id}}/edit">编辑</a>&nbsp;&nbsp;
