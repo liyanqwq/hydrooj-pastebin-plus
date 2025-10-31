@@ -1,6 +1,6 @@
 # Hydro Pastebin Plus
 
-由 `hydro_pastebin` 二次开发。
+由 [`hydro_pastebin`](https://www.npmjs.com/package/hydrooj_pastebin) 二次开发。
 
 ~现已适配 Hydro 最新版本。~
 
