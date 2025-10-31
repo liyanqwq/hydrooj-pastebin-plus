@@ -4,7 +4,7 @@
 
 ~现已适配 Hydro 最新版本。~
 
-This project is now deprecated. For current hydrooj users please check [`hydrooj-pastebin-plus-fix`](https://github.com/Floating-Ocean/hydrooj-pastebin-plus-fix).
+This project is now deprecated. Current hydrooj users please check [`hydrooj-pastebin-plus-fix`](https://github.com/Floating-Ocean/hydrooj-pastebin-plus-fix).
 
 ## 使用说明
 
