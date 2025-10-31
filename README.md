@@ -25,4 +25,6 @@
 
 非商业使用遵 AGPL v3 协议
 
-商业使用联系 [liyanqwq@duianit.cn](mailto:liyanqwq@duianit.cn)
+原電郵地址 `liyanqwq<at>duianit.cn` 沒有再使用，可以在我的個人網站上面記載的聯絡方式和我聯絡。
+
+應該沒有人會再商業使用這個版本，所以商業使用請自便。
